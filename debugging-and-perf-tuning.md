@@ -11,15 +11,27 @@
 ---
 
 Strategies
-==========
+----------
 
-* console.log (.trace, .info, .warn, .error)
+* console.log (.trace, .info, .warn, .error), util.log, util.debuglog
 * Morgan, Debug
-* Logging libraries (Bunyan, Winston)
-* Logging services (LogEntries, Loggly)
+* Logging libraries (Bunyan, Winston, ...)
+* Logging services (LogEntries, Loggly, ...)
 * node-inspector
 * WebStorm
-* APM - Application Performance Monitoring (AppDynamics, Node Relic)
+* APM - Application Performance Monitoring (AppDynamics, Node Relic, ...)
+
+---
+
+Nice to know
+------------
+
+* JSON.stringify
+* util.inspect
+
+* os and process package functions
+  * https://nodejs.org/api/os.html (uptime, loadavg, totalmem, freemem)
+  * https://nodejs.org/api/process.html#process_process_memoryusage
 
 ---
 

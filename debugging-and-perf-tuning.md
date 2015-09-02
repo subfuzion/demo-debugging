@@ -1,0 +1,28 @@
+# Node.js Debugging Strategies
+
+## BayNode Meetup, September 1, 2015
+
+#### [http://www.meetup.com/BayNode/events/221768952/](http://www.meetup.com/BayNode/events/221768952/)
+
+#### [http://www.meetup.com/Node-Hackers-at-Hacker-Dojo/events/220153489/](http://www.meetup.com/Node-Hackers-at-Hacker-Dojo/events/220153489/)
+
+### Tony Pujals [@subfuzion](https://twitter.com/subfuzion)
+
+---
+
+Strategies
+==========
+
+* console.log (.trace, .info, .warn, .error)
+* Morgan, Debug
+* Logging libraries (Bunyan, Winston)
+* Logging services (LogEntries, Loggly)
+* node-inspector
+* WebStorm
+* APM - Application Performance Monitoring (AppDynamics, Node Relic)
+
+---
+
+## Example repo and presentation published to GitHub
+
+https://github.com/tonypujals/demo-debugging

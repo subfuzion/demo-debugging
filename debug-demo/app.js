@@ -1,5 +1,5 @@
 var app = require('express')(),
-    debug = require('debug')('server'),
+    debug = require('debug')('server:api'),
     bodyParser = require('body-parser'),
     port = process.env.PORT || 3000,
     MongoClient = require('mongodb').MongoClient,
@@ -24,12 +24,12 @@ MongoClient.connect(mongoUrl, function(err, db) {
 
 app.get('/users', function(req, res) {
   var collection = _db.collection('data');
-  collection.find({}).toArray(function(err, result) {
+  collection.find({}).toArray(function(err, users) {
     if (err) {
       debug(err);
       res.status(500).end();
     } else {
-      var result = { success: true, users: result };
+      var result = { success: true, users: users };
       debug(result);
       res.send(result);
     }

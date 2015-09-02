@@ -46,12 +46,12 @@ app.get('/users', function (req, res) {
       return res.status(500).end();
     }
 
-    collection.find({}).toArray(function (err, result) {
+    collection.find({}).toArray(function (err, users) {
       if (err) {
         log.error(err);
         res.status(500).end();
       } else {
-        var result = { success: true, users: result };
+        var result = { success: true, users: users };
         log.info(result);
         res.send(result);
       }

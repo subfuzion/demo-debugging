@@ -28,12 +28,12 @@ MongoClient.connect(mongoUrl, function(err, db) {
 
 app.get('/users', function(req, res) {
   var collection = _db.collection('data');
-  collection.find({}).toArray(function(err, result) {
+  collection.find({}).toArray(function(err, users) {
     if (err) {
       console.error(err);
       res.status(500).end();
     } else {
-      var result = { success: true, users: result };
+      var result = { success: true, users: users };
       console.log(result);
       res.send(result);
     }
